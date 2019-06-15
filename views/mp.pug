@@ -1,0 +1,29 @@
+include header
+include photoswipe
+
+div(id="bodydiv")
+	div(class="ui container")
+		div(class="ui transition fade in bottom attached basic tab active" data-tab="first")
+			a(href="/" id="backlink")
+				i(class="fas fa-arrow-left")
+				span &nbspBACK TO PROJECTS
+			h3(class="ui header projectheader") 
+				p(class="projectname") MISLED, PUZZLED
+			div(class="projectdescription")
+				p(class="paragraph")
+					| A bunch of words about this project <br><br>
+					| Additional paragraph about this project words words words words words words words.
+					| Words words words words words words words words words words words.
+					| Words words words words words words words words words words words.
+					| More and more words words words words words words words words words words words. <br><br>
+					strong Technologies: 
+					| Photoshop
+					strong Role: 
+					| Graphic design
+			include gallery
+
+		div(class="ui transition fade in bottom attached tab" data-tab="second")
+			include resume
+		div(class="ui transition fade in bottom attached tab" data-tab="third")
+			include contact
+include footer

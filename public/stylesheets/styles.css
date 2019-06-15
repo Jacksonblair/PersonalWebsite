@@ -1,0 +1,425 @@
+
+/*Fonts*/
+@font-face {
+    font-family: 'BebasK';
+    src: url('/fonts/BebasKai.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Kohne';
+    src: url('/fonts/KOHNEMAKINA.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Odin';
+    src: url('/fonts/Odin Rounded.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'Sadana';
+    src: url('/fonts/SadanaSquare.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Poet';
+    src: url('/fonts/PoetsenOne-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Alte';
+    src: url('/fonts/AlteHaasGroteskBold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Multi';
+    src: url('/fonts/Multicolore.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'Gravity';
+    src: url('/fonts/Gravity-Bold.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'Blue';
+    src: url('/fonts/blue highway bd.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Blue';
+    src: url('/fonts/blue highway rg.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+/*var styles*/
+body {
+	display: flex;
+  	min-height: 100vh;
+  	flex-direction: column;
+	/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#1c1c1c+0,2d2d2d+100 */
+	background: #1c1c1c; /* Old browsers */
+	background: -moz-linear-gradient(top,  #1c1c1c 0%, #2d2d2d 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top,  #1c1c1c 0%,#2d2d2d 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom,  #1c1c1c 0%,#2d2d2d 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1c1c1c', endColorstr='#2d2d2d',GradientType=0 ); /* IE6-9 */
+}
+
+#bodydiv {
+	flex: 1;
+}
+
+#bodydiv div h3 {
+	font-family: 'Odin';
+	font-size: 25px;
+	color: white;
+}
+
+a {
+	color: white;
+}
+
+a:hover {
+	color: #ff9f9f;
+}
+
+#resumebutton, #emailbutton {
+	padding: 10px 10px;
+    margin: 0 auto;
+    margin-left: 15px;
+    display: inline-block;
+    font-size: 15px;
+}
+
+/*Header styles*/
+
+#topbardiv {
+	background: #bb5e5e;
+}
+
+#headernamediv {
+	display: inline-block;
+}
+
+#headername {
+    font-family: 'BebasK';
+    font-size: 60px;
+    color: white;
+/*    text-shadow: 1px 1px #fa9292;*/
+}
+
+#headermenudiv {
+	height: 40px;
+	display: inline-block;
+	float: right;
+	margin-top: 37px;
+}
+
+#headermenu {
+	height: 30px;
+	width: 300px;
+	float: right;
+	color: white;
+    margin-right: 0px;
+}
+
+#headermenu a {
+/*	border: 2px solid white;*/
+    padding: 4px;
+    font-family: 'BebasK';
+    width: 31%;
+    margin: 1.0%;
+    font-size: 20px;
+    color: white;
+    border-radius: 0px;
+    transition: all 0.3s;
+}
+
+#headermenu a:hover {
+	/*background-color: #777777;*/
+	transform: scale(1, 0.9);
+}
+
+.ui.secondary.menu .active.item {
+	background-color: #e78080;
+}
+
+.ui.grid>.column:not(.row) {
+	padding: 0px;
+}
+
+.ui.grid {
+	margin: 0px;
+	margin-bottom: 20px;
+}
+
+	/*Body styles*/
+
+.ui.container.bodycontainer {
+	padding-bottom: 30px;
+	min-height: 800px;
+}
+
+/*project preview elements*/
+.projectpreviewheader, .invertedprojectpreviewheader {
+	color: white;
+    font-family: 'BebasK';
+    font-size: 18px;
+    text-align: left;
+    padding: 0px 5px;
+    position: absolute;
+    bottom: 0px;
+    opacity: 1;
+    width: 100%;
+    transition: all 0.5s;
+    background-color: #00000040;
+    overflow: hidden;
+    max-height: 30px;
+    visibility: visible;
+}
+
+.invertedprojectpreviewheader {
+	color: black;
+	background-color: #ffffffad;
+}
+
+.projectpreview {
+	height: 220px;
+    background-color: #252525;
+    margin-bottom: 0px;
+    box-shadow: 3px 3px 3px #00000061;
+	border: 1.5px solid #ffffff6b;
+}
+
+.projectpreviewimage {
+	width: 100%;
+	height: 100%;
+	padding: 0px;
+	margin: 0px;
+	max-height: 220px;
+	object-fit: cover;
+}
+
+.projectblurb, .invertedprojectblurb {
+    max-height: 300px;
+    opacity: 1;
+    visibility: visible;
+    -webkit-transition: max-height 0.5s, opacity 0.5s padding 0.5s;
+    /* margin-top: 5px; */
+    font-family: 'BebasK';
+    font-size: 25px;
+    line-height: 0.9;
+    color: white;
+    top: 0px;
+    transition: all 0.5s;
+    position: absolute;
+	background-color: #00000061;
+	overflow: hidden;
+	padding: 4px;
+}
+
+.invertedprojectblurb {
+	background-color: #ffffffad;
+	color: black;
+}
+
+.ui.basic.segment {
+	background-color: #cccccc;
+	min-height: 220px;
+	padding: 0px 0px;
+	transition: all 0.5s;
+	margin: 4px;
+}
+
+.ui.basic.segment:hover {
+/*	background-color: #c3c3c3;*/
+/*	height: 105%;*/
+}
+
+.ui.basic.segment:hover .projectblurb, .ui.basic.segment:hover .invertedprojectblurb {
+	opacity: 0;
+	visibility: hidden;
+	max-height: 0px;
+	margin: 0px;
+}
+
+.ui.basic.segment:hover .projectpreviewheader, .ui.basic.segment:hover .invertedprojectpreviewheader {
+	opacity: 0;
+	visibility: hidden;
+	max-height: 0px;
+}
+
+
+
+
+/*Project page elements*/
+
+#backlink, .projectdescription a {
+	font-size: 20px;
+	font-family: 'BebasK';
+	display: inline-block;
+    -webkit-transition: margin-left 0.5s;
+    color: #ff9e9e;
+}
+
+#backlink {
+	margin-top: 10px;
+}
+
+#backlink:hover, .projectdescription a:hover {
+	margin-left: 10px;
+	opacity: 1;
+}
+
+.ui.header.projectheader {
+	margin: 0;
+	display: flex;
+	align-items: center;
+}
+
+.projectimagebutton {
+    width: 100%;
+    min-height: 200px;
+    max-height: 200px;
+    margin-top: 5px;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+	transition: all 0.5s;
+	background: none;
+}
+
+.projectimagebutton:hover {
+	-webkit-filter: brightness(85%);
+}
+
+.projectimage {
+	height: 99%;
+	width: 99%;
+	padding: 0px;
+	margin: 0px;
+	max-height: 195px;
+	object-fit: contain;
+}
+
+.ui.basic.segment.projectsegment {
+	border: none;
+	background: none;
+}
+
+.projectname, .ui.accordion .title:not(.ui) {
+	margin: 0px;
+	font-size: 40px;
+	text-align: left;
+	font-family: 'BebasK';
+}
+
+.projectname {
+	padding-left: 0px;
+	display: inline-block;
+}
+
+
+.ui.accordion .title:not(.ui) {
+	font-size: 20px;
+}
+
+.ui.accordion {
+	background: #ebebeb;
+    border-radius: 6px;
+    margin: 0px 30px;
+}
+
+.gallerygrid {
+	padding-bottom: 20px;
+}
+.projectdescription {
+	color: white;
+    font-size: 16px;
+    font-family: 'Blue';
+    display: block;
+    /* padding-top: 10px; */
+    padding: 10px 15px;
+    padding-top: 0px;
+    border-radius: 6px;
+    margin: 10px 30px;
+    min-height: 200px;
+}
+
+.paragraphheader {
+	margin: 0px;
+	text-align: left;
+	font-family: 'Blue';
+}
+
+.paragraph {
+	margin: 0px;
+	text-align: left;
+	font-family: 'Blue';
+}
+
+.paragraph span {
+	margin-bottom: 0px;
+}
+
+.paragraph p {
+  	color: #a3a3a3;
+  	padding-left: 20px;
+  	margin: 0px;
+}
+
+.paragraph ul {
+	margin: 3px;
+    font-size: 18px;
+}
+
+
+/*Footer styles*/
+
+#footerdiv {
+	height: 25px;
+	/*border-top: 3px solid black;*/
+	text-align: center;
+	font-family: 'Blue';
+	color: white;
+	background: #bb5e5e;
+	padding-top: 3px;
+}
+
+
+/*Media Queries*/
+@media only screen and (max-width: 520px) {
+
+	.projectname { 
+	  font-size: 25px; 
+	}
+
+	.projectdescription {
+		margin: 10px 0px;
+		font-size: 12px;
+	}
+
+	#backlink {
+		font-size: 15px;
+	}
+
+	#resumebutton, #emailbutton {
+		padding: 5px 5px;
+	    font-size: 10px;
+	}
+
+}
+
+
+/*mobile only will only display below 768px
+tablet only will only display between 768px - 991px
+computer only will always display 992px and above
+large screen only will only display between 1200px - 1919px
+widescreen only will only display 1920px and above*/

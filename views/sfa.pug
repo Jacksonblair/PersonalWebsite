@@ -1,0 +1,33 @@
+include header
+include photoswipe
+
+div(id="bodydiv")
+	div(class="ui container")
+		div(class="ui transition fade in bottom attached basic tab active" data-tab="first")
+			a(href="/" id="backlink")
+				span &nbspBACK TO PROJECTS
+			h3(class="ui header projectheader") 
+				p(class="projectname") STREAM FIGHTER ALPHA 
+			div(class="projectdescription")
+				div(class="paragraph")
+					| A multiplayer fighting game 'extension' for Twitch.tv that runs onscreen during streaming. <br><br>
+					| The app runs individual matches per channel, served from a Node back-end that manages the game state.
+					| Per channel user highscores are fetched and recorded on a mySQL database.
+					| User actions and communicated to the back-end via websockets.
+					| State updates are delivered each second to the front-end via the twitch PubSub. <br><br>
+					strong Technologies: 
+					ul
+						li Node, 
+						li Javascript, 
+						li Pug, 
+						li MySQL, 
+						li SocketIO <br><br>
+					strong Role: 
+					| All art and code
+			include gallery
+
+		div(class="ui transition fade in bottom attached tab" data-tab="second")
+			include resume
+		div(class="ui transition fade in bottom attached tab" data-tab="third")
+			include contact
+include footer

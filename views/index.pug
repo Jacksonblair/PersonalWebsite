@@ -1,0 +1,34 @@
+include header
+
+// Tasklist
+// Add pdf file resume download button and functionality
+// Maybe load divs from javascript array? 
+// Fix de
+
+div(id="bodydiv")
+	div(class="ui container bodycontainer")
+		div(class="ui transition fade in bottom attached basic tab active" data-tab="first")
+			h3(class="ui header projectheader")
+				p(class="projectname") PROJECTS
+			div(class="ui stackable one column grid")
+				div(class="column")
+					a(href="/sfa")
+						div(class="ui basic segment")
+							div(class="projectblurb") 
+								| A multiplayer fighting game extension for Twitch TV
+							div(class="projectpreview")
+								img(class="projectpreviewimage" src="/images/testimg.png")
+							div(class="projectpreviewheader") STREAM FIGHTER ALPHA
+				div(class="column")
+					a(href="/")
+						div(class="ui basic segment")
+							div(class="invertedprojectblurb") 
+								| A project blurb
+							div(class="projectpreview")
+								img(class="projectpreviewimage" src="/images/testimg2.png")
+							div(class="invertedprojectpreviewheader") A project name
+		div(class="ui transition fade in bottom attached tab" data-tab="second")
+			include resume
+		div(class="ui transition fade in bottom attached tab" data-tab="third")
+			include contact
+include footer

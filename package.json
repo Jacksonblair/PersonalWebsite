@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "start": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
   "engines": {
     "node": "10.x"
   },

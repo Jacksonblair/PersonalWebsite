@@ -11,6 +11,11 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter = require('./routes/index'))
 
+app.use(function(req, res, next) {
+	res.setHeader('Access-Control-Allow-Headers', 'cache-control');
+	res.setHeader('Cache-Control', 'public', 'max-age=31536000')
+});
+
 app.listen(process.env.PORT || '3000', function(){
 	console.log("Website listening on port 3000");
 });

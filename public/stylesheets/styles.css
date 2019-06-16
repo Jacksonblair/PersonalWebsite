@@ -168,7 +168,7 @@ ul {
 }
 
 .ui.secondary.menu .active.item {
-	background-color: #ff9e9e;
+	background-color: #ff9e9e99;
 }
 
 .ui.grid>.column:not(.row) {

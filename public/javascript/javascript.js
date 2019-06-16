@@ -9,7 +9,7 @@ $('.ui.accordion')
 
 function copyToClipboard(element) {
 	element.innerHTML = "COPIED TO CLIPBOARD!";
-	element.style.color = "#fa8989";
+	element.style.color = "white";
 	var $temp = $("<input>");
 	$("body").append($temp);
 	$temp.val($(element).text()).select();

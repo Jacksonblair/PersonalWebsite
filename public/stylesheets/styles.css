@@ -54,6 +54,28 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'Caviar';
+    src: url('/fonts/CaviarDreams.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Comf';
+    src: url('/fonts/Comfortaa-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'ComfB';
+    src: url('/fonts/Comfortaa-Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Steelfish';
+    src: url('/fonts/steelfish rg.ttf') format('truetype');
+}
+
+
+
 
 
 /*var styles*/
@@ -61,12 +83,7 @@ body {
 	display: flex;
   	min-height: 100vh;
   	flex-direction: column;
-	/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#1c1c1c+0,2d2d2d+100 */
-	background: #1c1c1c; /* Old browsers */
-	background: -moz-linear-gradient(top,  #1c1c1c 0%, #2d2d2d 100%); /* FF3.6-15 */
-	background: -webkit-linear-gradient(top,  #1c1c1c 0%,#2d2d2d 100%); /* Chrome10-25,Safari5.1-6 */
-	background: linear-gradient(to bottom,  #1c1c1c 0%,#2d2d2d 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1c1c1c', endColorstr='#2d2d2d',GradientType=0 ); /* IE6-9 */
+	background: white; /* Old browsers */
 }
 
 #bodydiv {
@@ -76,7 +93,9 @@ body {
 #bodydiv div h3 {
 	font-family: 'Odin';
 	font-size: 25px;
-	color: white;
+	color: #4d4d4d;
+	margin-top: 32px;
+	margin-bottom: 32px;
 }
 
 a {
@@ -95,32 +114,36 @@ a:hover {
     font-size: 15px;
 }
 
+ul {
+  list-style: none;
+}
+
 /*Header styles*/
 
 #topbardiv {
-	background: #bb5e5e;
+	background: #ec5b5b;
+    box-shadow: 0px 0 16px 4px #0000004d;
 }
 
 #headernamediv {
-	display: inline-block;
+    display: inline-block;
+    padding-top: 8px;
 }
 
 #headername {
-    font-family: 'BebasK';
-    font-size: 60px;
+    font-family: 'Poet';
+    font-size: 40px;
     color: white;
-/*    text-shadow: 1px 1px #fa9292;*/
 }
 
 #headermenudiv {
 	height: 40px;
 	display: inline-block;
 	float: right;
-	margin-top: 37px;
+	margin-top: 32px;
 }
 
 #headermenu {
-	height: 30px;
 	width: 300px;
 	float: right;
 	color: white;
@@ -130,10 +153,10 @@ a:hover {
 #headermenu a {
 /*	border: 2px solid white;*/
     padding: 4px;
-    font-family: 'BebasK';
+    font-family: 'Poet';
     width: 31%;
     margin: 1.0%;
-    font-size: 20px;
+    font-size: 16px;
     color: white;
     border-radius: 0px;
     transition: all 0.3s;
@@ -145,7 +168,7 @@ a:hover {
 }
 
 .ui.secondary.menu .active.item {
-	background-color: #e78080;
+	background-color: #ff9e9e;
 }
 
 .ui.grid>.column:not(.row) {
@@ -168,9 +191,9 @@ a:hover {
 .projectpreviewheader, .invertedprojectpreviewheader {
 	color: white;
     font-family: 'BebasK';
-    font-size: 18px;
+    font-size: 24px;
     text-align: left;
-    padding: 0px 5px;
+    padding: 3px 3px;
     position: absolute;
     bottom: 0px;
     opacity: 1;
@@ -192,7 +215,7 @@ a:hover {
     background-color: #252525;
     margin-bottom: 0px;
     box-shadow: 3px 3px 3px #00000061;
-	border: 1.5px solid #ffffff6b;
+	/*border: 1.5px solid #ffffff6b;*/
 }
 
 .projectpreviewimage {
@@ -211,7 +234,7 @@ a:hover {
     -webkit-transition: max-height 0.5s, opacity 0.5s padding 0.5s;
     /* margin-top: 5px; */
     font-family: 'BebasK';
-    font-size: 25px;
+    font-size: 32px;
     line-height: 0.9;
     color: white;
     top: 0px;
@@ -232,7 +255,9 @@ a:hover {
 	min-height: 220px;
 	padding: 0px 0px;
 	transition: all 0.5s;
-	margin: 4px;
+	margin: 8px;
+	margin-top: 0px;
+	margin-bottom: 56px;
 }
 
 .ui.basic.segment:hover {
@@ -259,11 +284,11 @@ a:hover {
 /*Project page elements*/
 
 #backlink, .projectdescription a {
-	font-size: 20px;
-	font-family: 'BebasK';
+	font-size: 16px;
+	font-family: 'Poet';
 	display: inline-block;
     -webkit-transition: margin-left 0.5s;
-    color: #ff9e9e;
+    color: #686868;
 }
 
 #backlink {
@@ -303,7 +328,7 @@ a:hover {
 .projectimage {
 	height: 99%;
 	width: 99%;
-	padding: 0px;
+	padding: 8px;
 	margin: 0px;
 	max-height: 195px;
 	object-fit: contain;
@@ -316,9 +341,9 @@ a:hover {
 
 .projectname, .ui.accordion .title:not(.ui) {
 	margin: 0px;
-	font-size: 40px;
+	font-size: 32px;
 	text-align: left;
-	font-family: 'BebasK';
+	font-family: 'Poet';
 }
 
 .projectname {
@@ -341,7 +366,7 @@ a:hover {
 	padding-bottom: 20px;
 }
 .projectdescription {
-	color: white;
+	color: #1e1e1e;
     font-size: 16px;
     font-family: 'Blue';
     display: block;
@@ -354,30 +379,29 @@ a:hover {
 }
 
 .paragraphheader {
-	margin: 0px;
-	text-align: left;
-	font-family: 'Blue';
+    text-align: left;
+    font-size: 22px;
+    margin-bottom: 8px;
+    margin-top: 8px;
+    color: black;
 }
 
 .paragraph {
 	margin: 0px;
 	text-align: left;
-	font-family: 'Blue';
-}
-
-.paragraph span {
-	margin-bottom: 0px;
-}
-
-.paragraph p {
-  	color: #a3a3a3;
-  	padding-left: 20px;
-  	margin: 0px;
+	font-size: 18px;
 }
 
 .paragraph ul {
-	margin: 3px;
+    margin-bottom: 16px;
+    margin-top: 8px;
     font-size: 18px;
+    color: #797979;
+    padding-left: 24px;
+}
+
+.paragraph li {
+	margin-bottom: 8px;
 }
 
 
@@ -389,8 +413,9 @@ a:hover {
 	text-align: center;
 	font-family: 'Blue';
 	color: white;
-	background: #bb5e5e;
+	background: #393939;
 	padding-top: 3px;
+	display: none;
 }
 
 

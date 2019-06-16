@@ -1,11 +1,11 @@
-## functionality i need
+## COLORS
 
-	header
-		contact details
-		name
+#DCC48E
 
-	pages
-		home
-		resume
-		projects
-		
+#EAEFD3
+
+#B3C0A4
+
+#505168
+
+#27233A

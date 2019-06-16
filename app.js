@@ -11,8 +11,9 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter = require('./routes/index'))
 
-app.use(function(req, res, next) {
-    res.setHeader("Cache-Control", "public, max-age=2592000");
+app.use((req, res, next) => {
+    res.header("Cache-Control", "public, max-age=2592000");
+    next();
 });
 
 app.listen(process.env.PORT || '3000', function(){

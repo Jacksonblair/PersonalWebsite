@@ -420,7 +420,7 @@ ul {
 
 
 /*Mobile Settings*/
-@media only all and (max-device-width: 320px) {
+@media only all and (max-device-width: 400px) {
 
 	#headermenu {
 	    width: 100%;

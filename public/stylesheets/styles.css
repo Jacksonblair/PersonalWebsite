@@ -419,25 +419,26 @@ ul {
 }
 
 
-/*Media Queries*/
-@media only screen and (max-width: 520px) {
+/*Mobile Settings*/
+@media only screen and (max-width: 400px) {
 
-	.projectname { 
-	  font-size: 25px; 
+	#headermenu {
+	    width: 100%;
+	    float: right;
+	    color: white;
+	    margin-right: 0px;
 	}
 
-	.projectdescription {
-		margin: 10px 0px;
-		font-size: 12px;
+	#headermenudiv {
+	    height: 40px;
+	    display: inline-block;
+	    margin-top: 32px;
+	    margin: 0 auto;
+	    width: 100%;
 	}
 
-	#backlink {
-		font-size: 15px;
-	}
-
-	#resumebutton, #emailbutton {
-		padding: 5px 5px;
-	    font-size: 10px;
+	#headernamediv {
+	    display: block;
 	}
 
 }
